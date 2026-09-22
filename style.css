@@ -14,6 +14,10 @@ body {
     justify-content: space-between;
     align-items: center;
     border-bottom: solid black 1px;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 1;
 }
 
 .navbar__sec1 {
@@ -35,7 +39,7 @@ body {
     border: none;
     width: 100%;
     font-size: 16px;
-
+background-color: transparent;
 }
 
 .navbar__sec2 input:focus {
@@ -60,9 +64,39 @@ body {
     color: white;
     border-radius: 30px;
 }
+.Mylearning{
+    position: relative;
+    cursor: pointer;
+}
+.Mylearning__popup{
+    position: absolute;
+    border: solid black 1px;
+    border-radius: 10px;
+    background-color: white;
+    width:100px;
+    top:40px;
+        padding: 20px;
+    right: 0;
+    display: none;
+}
+.Mylearning:hover .Mylearning__popup{
+    display: block;
+}
 
 .course img {
     width: 100%;
+    position:relative;
+   
+}
+.course__offer{
+    background-color: white;
+    position: absolute;
+    bottom:430px;
+width: 300px;
+left: 300px;
+margin: 10px;
+padding: 10px;
+border: solid black 2px;
 }
 
 .recommend {
