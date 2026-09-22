@@ -63,6 +63,15 @@ background-color: transparent;
     background-color: purple;
     color: white;
     border-radius: 30px;
+    border: solid purple 1px;
+    cursor: pointer;
+}
+.categories p:hover{
+    background-color: transparent;
+    color: purple;
+    transition: 1s;
+    border: solid purple 1px;
+    
 }
 .Mylearning{
     position: relative;
@@ -96,9 +105,21 @@ background-color: transparent;
    top: 30%;
    background-color: white;
    left: 20%;
+   animation-name: zoom;animation-duration: 3s;
+   opacity: 0;
+   animation-fill-mode:forwards;
 
 }
-
+@keyframes zoom {
+    0%{
+        opacity: 0;
+        transform: scale(0);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
 .recommend {
     padding: 10px;
 }
