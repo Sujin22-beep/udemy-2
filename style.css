@@ -89,14 +89,14 @@ background-color: transparent;
    
 }
 .course__offer{
-    background-color: white;
-    position: absolute;
-    bottom:430px;
-width: 300px;
-left: 300px;
-margin: 10px;
-padding: 10px;
-border: solid black 2px;
+   border: solid black 2px;
+   width: 20%;
+   padding: 1%;
+   position: absolute;
+   top: 30%;
+   background-color: white;
+   left: 20%;
+
 }
 
 .recommend {
