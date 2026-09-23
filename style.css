@@ -51,6 +51,9 @@ background-color: transparent;
     align-items: center;
     gap: 10px;
 }
+.navbar__sec4{
+    display: none;
+}
 
 .categories {
     border-bottom: solid black 1px;
@@ -99,7 +102,7 @@ background-color: transparent;
 }
 .course__offer{
    border: solid black 2px;
-   width: 20%;
+   width: 40%;
    padding: 1%;
    position: absolute;
    top: 30%;
@@ -125,7 +128,9 @@ background-color: transparent;
 }
 
 .coursecard {
-    width: 400px;
+    width:20%;
+    flex-grow: 1;
+    margin: 5px;
 }
 
 .recommend__container {
@@ -163,7 +168,9 @@ background-color: transparent;
 }
 
 .popularcoursecard {
-    width: 400px;
+    width: 20%;
+    flex-grow: 1;
+    margin: 5px;
 }
 
 .popular__container {
@@ -191,4 +198,21 @@ background-color: transparent;
 .footer__two{
     display: flex;
     justify-content:space-between
+}
+@media screen and (max-width:800px){
+    body{
+        font-size: 10px;
+    }
+
+}
+@media screen and (max-width:600px){
+    .coursecard,.popularcoursecard{
+        flex-basis: 40%;
+    }
+    .categories,.navbar__sec2,.navbar__sec3{
+        display: none;
+    }
+    .navbar__sec4{
+        display: block;
+    }
 }
